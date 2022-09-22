@@ -10,12 +10,13 @@ body {
 }
 
 /* CABEÇALHO */
-.intern{
+.intern {
     position: sticky;
     top: 0;
     background: #00000010;
     backdrop-filter: blur(10px);
 }
+
 .areaelements {
     padding-top: 1%;
     /* position and dimension */
@@ -68,7 +69,7 @@ body {
     /*tira a borda quando clica no elemento*/
     padding: 0 15px;
     color: #f0f5fb;
-    font-family: 'Raleway'; 
+    font-family: 'Raleway';
 }
 
 .search-btn {
@@ -83,35 +84,26 @@ body {
     background: #0a1b2d;
 }
 
-/*
-.search-box:hover>.search-txt {
-    /* position and dimension */
-    width: 240;
-    padding: 0 15px;
-    /* visual */
-    transition: 0.3s;
-}
-*/
-
 .search-box:hover>.search-btn {
     /* visual */
     /*esse bloco é para caso queira animar o botão da lupa*/
     transition: 0.5s;
 }
 
-.login{
+.login {
     position: absolute;
     transform: translate(0%, -50%);
     top: 50%;
     right: 20px;
 }
+
 .login-btn {
     /* position and dimension */
-    
+
     /* visual */
     width: 100px;
     height: 40px;
-    
+
     border-radius: 20px;
     background: #0a1b2d;
     color: #ffffff;
@@ -147,44 +139,49 @@ body {
 
 /* barra de novidades */
 
-.hero{
+.hero {
     height: 250px;
     color: #000000;
     background-image: url("C:/Users/okaua/Desktop/web project/images/heroimg.png");
     background-size: cover;
     background-position: center;
-    
+
     width: 100%;
     display: flex;
     align-items: center;
     align-content: center;
 }
-.newselements{
+
+.newselements {
     padding-top: 4%;
     padding-left: 5%;
 }
-.news{
+
+.news {
     top: 5%;
     height: 25px;
     font-style: 1000;
     color: #ffffff;
 }
-.coment{
+
+.coment {
     top: 6%;
     height: 24px;
     font-style: 700;
     color: #ffffff90;
 }
-.acesspromo{
+
+.acesspromo {
     padding-top: 4%;
 }
+
 .promo-btn {
     /* position and dimension */
-    
+
     /* visual */
     width: 100px;
     height: 40px;
-    
+
     border-radius: 20px;
     background: #0a1b2d;
     color: #ffffff;
@@ -282,7 +279,8 @@ body {
     align-self: stretch;
     flex-grow: 1;
 }
-.media:hover{
+
+.media:hover {
     transition: 0.4s;
     height: 180px;
     padding-left: 0.3%;

@@ -1,0 +1,175 @@
+body {
+    font-family: 'Raleway';
+    color: #212121;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+/* CABEÇALHO */
+.intern {
+    position: sticky;
+    top: 0;
+    background: #00000010;
+    backdrop-filter: blur(10px);
+}
+
+.areaelements {
+    padding-top: 1%;
+    /* position and dimension */
+    height: 50px;
+    /* visual */
+}
+
+.topelements {
+    /* position and dimension */
+    display: flex;
+    /* visual */
+    background: #b4b4b4;
+}
+
+.logo-itatech {
+    /* position and dimension */
+    position: absolute;
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 2%;
+    /* visual */
+}
+
+.search-box {
+    /* position and dimension */
+    position: absolute;
+    left: 50%;
+    height: 20px;
+    width: 40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* visual */
+    background: #0a1b2d;
+    border-radius: 20px;
+}
+
+.search-txt {
+    /* position and dimension */
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    /* visual */
+    border: none;
+    background: none;
+    outline: none;
+    /*tira a borda quando clica no elemento*/
+    padding: 0 15px;
+    color: #f0f5fb;
+    font-family: 'Raleway';
+}
+
+.search-btn {
+    /* position and dimension */
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* visual */
+    border-radius: 50%;
+    background: #0a1b2d;
+}
+
+.search-box:hover>.search-btn {
+    /* visual */
+    /*esse bloco é para caso queira animar o botão da lupa*/
+    transition: 0.5s;
+}
+
+/*area de login*/
+.space {
+
+    height: 800px;
+    background-image: url("C:/Users/okaua/Desktop/web project/images/background-login.jpg");
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enuciado {
+    height: 25px;
+    font-style: 1000;
+    color: #ffffff;
+    transform: translate(0%, -50%);
+    left: 50%;
+}
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #00000030;
+    border: 3px solid #00000050;
+    backdrop-filter: blur(10px);
+}
+.line{
+    flex-direction: column;
+    justify-content: left;
+}
+.tittle{
+    font-size: 20px;
+    height: 22px;
+    font-family: 'Raleway';
+    color: #ffffff;
+}
+
+input {
+    font-family: 'Raleway';
+    width: 360px;
+    height: 40%;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 2px solid #00000030;
+    background: #00000030;
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    background: #0a1b2d;
+}
+
+.input[type="submit"]:hover {
+    background: rgb(45, 10, 47);
+}
+
+/*PARTE DA AUTORIA*/
+
+.autoria {
+    /* position and dimension */
+
+    /* visual */
+    justify-content: center;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

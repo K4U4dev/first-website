@@ -142,7 +142,7 @@ body {
 .hero {
     height: 250px;
     color: #000000;
-    background-image: url("C:/Users/okaua/Desktop/web project/images/heroimg.png");
+    background-image: url("../images/heroimg.png");
     background-size: cover;
     background-position: center;
 
@@ -358,7 +358,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #b3b3b3;
+    background: #0a1b2d50;
 }
 .elementsform{
     padding-top: 2%;

@@ -19,29 +19,22 @@ body {
 
 .areaelements {
     padding-top: 1%;
-    /* position and dimension */
     height: 50px;
-    /* visual */
 }
 
 .topelements {
-    /* position and dimension */
     display: flex;
-    /* visual */
     background: #b4b4b4;
 }
 
 .logo-itatech {
-    /* position and dimension */
     position: absolute;
     transform: translate(0%, -50%);
     top: 50%;
     left: 2%;
-    /* visual */
 }
 
 .search-box {
-    /* position and dimension */
     position: absolute;
     left: 50%;
     height: 20px;
@@ -52,44 +45,42 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* visual */
     background: #0a1b2d;
     border-radius: 20px;
 }
-
+@media screen and (max-width: 440px){
+    .logo-itatech{
+        padding-top: 1%;
+        padding-left: 5%;
+    }
+    .search-box{
+        width: 20%;
+        justify-content: center;
+    }
+    .search-txt{
+        height: 0%;
+    }
+}
 .search-txt {
-    /* position and dimension */
     font-size: 16px;
     line-height: 20px;
     width: 100%;
-    /* visual */
     border: none;
     background: none;
     outline: none;
-    /*tira a borda quando clica no elemento*/
     padding: 0 15px;
     color: #f0f5fb;
     font-family: 'Raleway';
 }
-
 .search-btn {
-    /* position and dimension */
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* visual */
     border-radius: 50%;
     background: #0a1b2d;
 }
-
-.search-box:hover>.search-btn {
-    /* visual */
-    /*esse bloco é para caso queira animar o botão da lupa*/
-    transition: 0.3s;
-}
-
 .login {
     position: absolute;
     transform: translate(0%, -50%);
@@ -98,9 +89,6 @@ body {
 }
 
 .login-btn {
-    /* position and dimension */
-
-    /* visual */
     width: 100px;
     height: 40px;
 
@@ -109,9 +97,7 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    /*alinha horizontalmente*/
     align-items: center;
-    /*alinha verticalmente*/
     text-align: center;
     user-select: none;
     cursor: pointer;
@@ -119,9 +105,6 @@ body {
 }
 
 .login-btn:hover {
-    /* position and dimension */
-
-    /* visual */
     background: #622ae4;
     transition: background 0.3s;
 }
@@ -176,20 +159,14 @@ body {
 }
 
 .promo-btn {
-    /* position and dimension */
-
-    /* visual */
     width: 100px;
     height: 40px;
-
     border-radius: 20px;
     background: #0a1b2d;
     color: #ffffff;
     display: flex;
     justify-content: center;
-    /*alinha horizontalmente*/
     align-items: center;
-    /*alinha verticalmente*/
     text-align: center;
     user-select: none;
     cursor: pointer;
@@ -197,9 +174,6 @@ body {
 }
 
 .promo-btn:hover {
-    /* position and dimension */
-
-    /* visual */
     background: #622ae4;
     transition: background 0.3s;
 }
@@ -209,25 +183,22 @@ body {
 /* AREA DE PRODUTOS */
 .products {
     width: 100%;
+    max-width: 100vw;
 }
 
 .spaceelement {
-    /* position and dimension */
     left: 50%;
     justify-content: center;
     padding-bottom: 3%;
-    /* visual */
 }
 
 .topspace {
-    /* position and dimension */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .topic {
-    /* visual */
     padding-left: 8%;
     font-family: 'Raleway';
     font-size: 22px;
@@ -236,7 +207,6 @@ body {
 }
 
 .more {
-    /* visual */
     padding-right: 8%;
     font-family: 'Raleway';
     font-size: 16px;
@@ -248,37 +218,47 @@ body {
 }
 
 .more:hover {
-    /* visual */
     color: #622ae4;
     transition: 0.3s;
 }
 
 .elements {
-    /* position and dimension */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .product {
-    /* position and dimension */
     text-align: left;
     padding-left: 0.5%;
     padding-right: 0.5%;
-    /* visual */
+    padding-bottom: 2%;
 }
-
+.productpc {
+    visibility: visible;
+    text-align: left;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 2%;
+}
+@media screen and (max-width: 1125px){
+    .productpc{
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+        height: 0%;
+    }
+}
+@media screen and (max-width: 733px){
+    .elements{
+        flex-wrap: wrap;
+    }
+}
 .media {
-    /* position and dimension */
-
-    /* visual */
     border-radius: 5%;
     height: 174px;
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 1;
 }
 
 .media:hover {
@@ -289,9 +269,6 @@ body {
 }
 
 .productname {
-    /* position and dimension */
-
-    /* visual */
     width: 176px;
     height: 16px;
     font-family: 'Raleway';
@@ -307,9 +284,6 @@ body {
 }
 
 .price {
-    /* position and dimension */
-
-    /* visual */
     width: 176px;
     height: 19px;
     font-family: 'Raleway';
@@ -318,16 +292,9 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #464646;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
 }
 
 .viewproduct {
-    /* position and dimension */
-
-    /* visual */
     width: 100px;
     height: 19px;
     text-decoration: none;
@@ -337,50 +304,55 @@ body {
     color: #2A7AE4;
     font-family: 'Raleway';
     font-style: normal;
-    flex: none;
-    order: 3;
-    flex-grow: 0;
 }
 
 .viewproduct:hover {
-    /* position and dimension */
-
-    /* visual */
     color: #622ae4;
     transition: 0.3s;
 }
 
 
 /* AREA DO FALE CONOSCO */
-.form{
+.form {
     width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #0a1b2d50;
 }
-.elementsform{
+
+.elementsform {
     padding-top: 2%;
     height: 90%;
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: row;
 }
-.logo-form{
-    width: 15%;
+
+.elementsleft {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.logo-form {
+    width: 30%;
     display: flex;
     justify-content: center;
 }
-.linksform{
-    width: 35%;
+
+.linksform {
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
 }
-.topicform{
+
+.topicform {
     font-family: 'Raleway';
     font-size: 20px;
     padding-bottom: 4%;
@@ -390,17 +362,70 @@ body {
     user-select: none;
     cursor: pointer;
 }
-.topicform:hover{
+
+.topicform:hover {
     transition: 0.3s;
     color: #622ae4;
 }
-.contact{
+
+@media screen and (max-width: 1000px) {
+    .elementsleft {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .logo-form {
+        width: 90%;
+        justify-content: flex-start;
+    }
+
+    .linksform {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .elementsform {
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .elementsleft {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-left: 20%;
+        padding-bottom: 2%;
+    }
+
+    .logo-form {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .linksform {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contact {
     width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 2%;
 }
-.name{
+
+.name {
     font-family: 'Raleway';
     width: 100%;
     height: 40px;
@@ -413,10 +438,12 @@ body {
     padding-left: 2%;
     padding-right: 2%;
 }
-.name::placeholder{
+
+.name::placeholder {
     color: #ffffff90;
 }
-.mensagem{
+
+.mensagem {
     font-family: 'Raleway';
     width: 98%;
     height: 60px;
@@ -428,14 +455,12 @@ body {
     outline: none;
     padding: 3%;
 }
-.mensagem::placeholder{
+
+.mensagem::placeholder {
     color: #ffffff90;
 }
 
 .send-btn {
-    /* position and dimension */
-
-    /* visual */
     width: 100px;
     height: 40px;
 
@@ -444,9 +469,7 @@ body {
     color: #ffffff;
     display: flex;
     justify-content: center;
-    /*alinha horizontalmente*/
     align-items: center;
-    /*alinha verticalmente*/
     text-align: center;
     user-select: none;
     cursor: pointer;
@@ -454,23 +477,22 @@ body {
 }
 
 .send-btn:hover {
-    /* position and dimension */
-
-    /* visual */
     background: #622ae4;
     transition: background 0.3s;
 }
 
 
+
 /*PARTE DA AUTORIA*/
-.footer{
+.footer {
     height: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.topline{
+
+.topline {
     padding-top: 2%;
     justify-content: center;
     width: 100%;
@@ -482,7 +504,8 @@ body {
     font-size: 16px;
     color: #464646;
 }
-.jaba{
+
+.jaba {
     padding-left: 5px;
     text-decoration: none;
     font-family: 'Raleway';
@@ -492,7 +515,7 @@ body {
     color: #622ae4;
 }
 
-.year{
+.year {
     width: 100%;
     height: 10%;
     text-align: center;

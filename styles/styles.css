@@ -48,19 +48,23 @@ body {
     background: #0a1b2d;
     border-radius: 20px;
 }
-@media screen and (max-width: 440px){
-    .logo-itatech{
+
+@media screen and (max-width: 440px) {
+    .logo-itatech {
         padding-top: 1%;
         padding-left: 5%;
     }
-    .search-box{
+
+    .search-box {
         width: 20%;
         justify-content: center;
     }
-    .search-txt{
+
+    .search-txt {
         height: 0%;
     }
 }
+
 .search-txt {
     font-size: 16px;
     line-height: 20px;
@@ -72,6 +76,7 @@ body {
     color: #f0f5fb;
     font-family: 'Raleway';
 }
+
 .search-btn {
     width: 20px;
     height: 20px;
@@ -81,6 +86,7 @@ body {
     border-radius: 50%;
     background: #0a1b2d;
 }
+
 .login {
     position: absolute;
     transform: translate(0%, -50%);
@@ -110,18 +116,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* barra de novidades */
-
 .hero {
     height: 250px;
     color: #000000;
@@ -179,7 +174,6 @@ body {
 }
 
 
-
 /* AREA DE PRODUTOS */
 .products {
     width: 100%;
@@ -235,6 +229,7 @@ body {
     padding-right: 0.5%;
     padding-bottom: 2%;
 }
+
 .productpc {
     visibility: visible;
     text-align: left;
@@ -242,8 +237,9 @@ body {
     padding-right: 0.5%;
     padding-bottom: 2%;
 }
-@media screen and (max-width: 1125px){
-    .productpc{
+
+@media screen and (max-width: 1125px) {
+    .productpc {
         position: absolute;
         left: 0;
         top: 0;
@@ -251,11 +247,13 @@ body {
         height: 0%;
     }
 }
-@media screen and (max-width: 733px){
-    .elements{
+
+@media screen and (max-width: 733px) {
+    .elements {
         flex-wrap: wrap;
     }
 }
+
 .media {
     border-radius: 5%;
     height: 174px;
@@ -480,7 +478,6 @@ body {
     background: #622ae4;
     transition: background 0.3s;
 }
-
 
 
 /*PARTE DA AUTORIA*/

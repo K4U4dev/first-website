@@ -9,6 +9,7 @@ body {
     margin: 0;
 }
 
+
 /* CABEÇALHO */
 .intern {
     position: sticky;
@@ -19,29 +20,22 @@ body {
 
 .areaelements {
     padding-top: 1%;
-    /* position and dimension */
     height: 50px;
-    /* visual */
 }
 
 .topelements {
-    /* position and dimension */
     display: flex;
-    /* visual */
     background: #b4b4b4;
 }
 
 .logo-itatech {
-    /* position and dimension */
     position: absolute;
     transform: translate(0%, -50%);
     top: 50%;
     left: 2%;
-    /* visual */
 }
 
 .search-box {
-    /* position and dimension */
     position: absolute;
     left: 50%;
     height: 20px;
@@ -52,46 +46,39 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* visual */
     background: #0a1b2d;
     border-radius: 20px;
 }
 
 .search-txt {
-    /* position and dimension */
     font-size: 16px;
     line-height: 20px;
     width: 100%;
     height: 100%;
-    /* visual */
     border: none;
     background: none;
     outline: none;
-    /*tira a borda quando clica no elemento*/
     padding: 0 15px;
     color: #f0f5fb;
     font-family: 'Raleway';
 }
 
 .search-btn {
-    /* position and dimension */
     width: 20px;
     height: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* visual */
     border-radius: 50%;
     background: #0a1b2d;
 }
 
 .search-box:hover>.search-btn {
-    /* visual */
-    /*esse bloco é para caso queira animar o botão da lupa*/
     transition: 0.3s;
 }
 
-/*area de login*/
+
+/*AREA DE LOGIN*/
 .space {
     height: 800px;
     background-image: url("../images/background-login.jpg");
@@ -125,6 +112,7 @@ body {
     border: 4px solid #00000050;
     backdrop-filter: blur(10px);
 }
+
 .dados {
     font-family: 'Raleway';
     width: 90%;
@@ -136,31 +124,28 @@ body {
     color: #ffffff;
     outline: none;
 }
-.dados::placeholder{
+
+.dados::placeholder {
     color: #ffffff90;
 }
-.enterspace{
+
+.enterspace {
     width: 50%;
     height: 25%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-.enter-btn {
-    /* position and dimension */
 
-    /* visual */
+.enter-btn {
     width: 100%;
     height: 75%;
-
     border-radius: 10px;
     background: #0a1b2d;
     color: #ffffff;
     display: flex;
     justify-content: center;
-    /*alinha horizontalmente*/
     align-items: center;
-    /*alinha verticalmente*/
     text-align: center;
     user-select: none;
     cursor: pointer;
@@ -168,21 +153,9 @@ body {
 }
 
 .enter-btn:hover {
-    /* position and dimension */
-
-    /* visual */
     background: #622ae4;
     transition: background 0.3s;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* AREA DO FALE CONOSCO */
@@ -222,7 +195,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 
 .topicform {
@@ -353,7 +325,6 @@ body {
     background: #622ae4;
     transition: background 0.3s;
 }
-
 
 
 /*PARTE DA AUTORIA*/

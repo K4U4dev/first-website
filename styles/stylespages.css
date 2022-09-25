@@ -151,11 +151,6 @@ body {
 }
 
 
-
-
-
-
-
 /* AREA DE PRODUTOS */
 .products {
     width: 100%;
@@ -378,7 +373,7 @@ body {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        padding-left: 20%;
+        padding-left: 25%;
         padding-bottom: 2%;
     }
 
